@@ -55,10 +55,11 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# Configure CORS — no wildcard "*" allowed with allow_credentials=True
+# Configure CORS — allow explicit local origins and Vercel domains
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.ALLOWED_ORIGINS,
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type", "Authorization", "X-API-Key"],

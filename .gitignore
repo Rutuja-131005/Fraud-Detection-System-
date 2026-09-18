@@ -1,6 +1,41 @@
-backend/.venv/
-frontend/node_modules/
-frontend/.next/
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js build output
+.next/
+out/
+build/
+dist/
+
+# Python & Virtual Environments
 __pycache__/
-*.pyc
-.env.localgit add .
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+.pytest_cache/
+.coverage
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Databases (Local dev SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# Vercel
+.vercel
+
+# IDE & OS
+.DS_Store
+*.pem
+.vscode/
+.idea/

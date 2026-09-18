@@ -247,7 +247,7 @@ export default function Page() {
         <div className="content-wrap">
           {apiError && (
             <div style={{ padding: '12px 16px', background: '#fef2f2', border: '1px solid #fca5a5', borderRadius: '8px', color: '#991b1b', marginBottom: '16px' }}>
-              <strong>Backend Connection Issue:</strong> {apiError}. Ensure FastAPI server is running on http://localhost:8000.
+              <strong>Backend Connection Issue:</strong> {apiError}. Ensure the Python FastAPI API is running or check server logs.
             </div>
           )}
 
